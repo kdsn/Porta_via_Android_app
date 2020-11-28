@@ -72,7 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
         >
 
             <EditText
@@ -81,6 +80,36 @@
                     android:layout_height="60dp"
                     android:inputType="textPassword"
                     android:hint="Adgangskode"
+                    android:paddingVertical="15dp"
+                    android:background="@drawable/edittext_background"
+                    android:paddingStart="65dp"
+            />
+
+            <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/key"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+        >
+
+            <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:inputType="textPassword"
+                    android:hint="Bekræfte adgangskode"
                     android:paddingVertical="15dp"
                     android:background="@drawable/edittext_background"
                     android:paddingStart="65dp"
@@ -110,7 +139,7 @@
                 android:layout_gravity="center_horizontal"
                 android:paddingStart="60dp"
                 android:paddingEnd="60dp"
-                android:text="Login"
+                android:text="Opret bruger"
                 android:onClick="login"
                 android:textAllCaps="false" />
 
