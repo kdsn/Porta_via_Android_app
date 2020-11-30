@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Porta via</string>
+    <string name="et_user">Brugernavn</string>
+    <string name="et_pass">Adgangskode</string>
+    <string name="btn_login">Login</string>
+    <string name="link_password_recovery">Glemt adgangskode?</string>
+    <string name="btn_recover">Nulstil kode</string>
+    <string name="link_back_to_login">Gå tilbage til login skærmen</string>
 </resources>

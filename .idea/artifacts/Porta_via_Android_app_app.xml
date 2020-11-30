@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="Porta_via_Android_app.app">
+    <output-path>$PROJECT_DIR$/build/classes/artifacts/Porta_via_Android_app_app</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyStoreUrl" value="file://" />
+        <option name="proGuardCfgFiles">
+          <list>
+            <option value="file://%MODULE_SDK_HOME%/tools/proguard/proguard-android.txt" />
+          </list>
+        </option>
+      </options>
+    </properties>
+    <root id="archive" name="Porta_via_Android_app.app.apk">
+      <element id="android-final-package" facet="Porta_via_Android_app.app/android/Android" />
+    </root>
+  </artifact>
+</component>

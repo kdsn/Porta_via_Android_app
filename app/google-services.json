@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "536862484587",
+    "firebase_url": "https://porta-via-ef2dd.firebaseio.com",
+    "project_id": "porta-via-ef2dd",
+    "storage_bucket": "porta-via-ef2dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536862484587:android:5754785dd7a4d33ca5292e",
+        "android_client_info": {
+          "package_name": "dk.porta_via.porta_via"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536862484587-bidmsltu86eqo1mtnuffcer3hfjb0cpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAopv6jUHx6Xox_GbqtliGv17uowtvoxEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536862484587-bidmsltu86eqo1mtnuffcer3hfjb0cpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
