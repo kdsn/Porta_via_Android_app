@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,9 +27,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            openActivityDashboard();
+        } else {
+            //
+        }
+
+        setContentView(R.layout.activity_main);
+
 
         et_login_username = findViewById(R.id.et_login_username);
         et_login_password = findViewById(R.id.et_login_password);
@@ -53,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    private void openActivityDashboard() {
+        Intent intent = new Intent(this, DashboardActivity.class);
+        startActivity(intent);
     }
 
     private void Login() {

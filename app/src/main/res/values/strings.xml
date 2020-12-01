@@ -6,4 +6,9 @@
     <string name="link_password_recovery">Glemt adgangskode?</string>
     <string name="btn_recover">Nulstil kode</string>
     <string name="link_back_to_login">Gå tilbage til login skærmen</string>
+    <string name="btn_loout">Log ud</string>
+    <string name="tv_restaurantname">Restaurant navn</string>
+    <string name="et_restaurantname">Indtast restaurantens navn</string>
+    <string name="toast_reset_password_success">Vi har sendt en e-mail, der hjælper dig med at nulstille din adgangskode.</string>
+    <string name="toast_reset_password_fail">Vi kunne ikke sende en e-mail til dig, kontroler at den oplyste email er korrekt.</string>
 </resources>
