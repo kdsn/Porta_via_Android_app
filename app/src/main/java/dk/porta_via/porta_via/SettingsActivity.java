@@ -28,7 +28,8 @@ public class SettingsActivity extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
 
                     FirebaseAuth.getInstance().signOut();
-                    openActivityMain();
+                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -37,7 +38,8 @@ public class SettingsActivity extends AppCompatActivity {
         iv_dashboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivityDashboard();
+                Intent intent = new Intent(SettingsActivity.this, DashboardActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -46,15 +48,5 @@ public class SettingsActivity extends AppCompatActivity {
     private void updateTextView(String et_restaurantname) {
         TextView textView = (TextView) findViewById(R.id.et_restaurantname);
         textView.setText(et_restaurantname);
-    }
-
-    private void openActivityMain() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    private void openActivityDashboard() {
-        Intent intent = new Intent(this, DashboardActivity.class);
-        startActivity(intent);
     }
 }

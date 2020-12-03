@@ -17,14 +17,19 @@ public class DashboardActivity extends AppCompatActivity {
         iv_settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivitySettings();
+                Intent intent = new Intent(DashboardActivity.this, SettingsActivity.class);
+                startActivity(intent);
             }
         });
 
-    }
+        ImageView iv_reprint = (ImageView) findViewById(R.id.iv_reprint);
+        iv_reprint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashboardActivity.this, ReprintActivity.class);
+                startActivity(intent);
+            }
+        });
 
-    private void openActivitySettings() {
-        Intent intent = new Intent(this, SettingsActivity.class);
-        startActivity(intent);
     }
 }

@@ -4,17 +4,10 @@
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:context=".DashboardActivity">
+        android:layout_height="match_parent"
+        tools:context=".ReprintActivity">
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:paddingBottom="0dp"
-            android:orientation="vertical">
-
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
         <RelativeLayout android:layout_width="match_parent"
                         android:layout_height="wrap_content">
             <TextView
@@ -36,67 +29,66 @@
                     app:srcCompat="@drawable/cheff"
                     android:contentDescription="@string/app_name"
                     android:layout_marginTop="105dp"/>
+
         </RelativeLayout>
-        <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="-185dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
             <ImageView
+
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     app:srcCompat="@drawable/chat"
-                    android:layout_marginStart="15dp"
-                    android:layout_alignParentBottom="true"/>
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"/>
 
             <ImageView
-                    android:id="@+id/iv_settings"
+                    android:id="@+id/iv_reprint_to_dashboard"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    app:srcCompat="@drawable/settings"
+                    app:srcCompat="@drawable/check_list"
+                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentEnd="true"/>
+                    android:layout_alignParentRight="true"/>
 
         </RelativeLayout>
+
         <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="180dp"
-                android:minHeight="350dp"
-                android:paddingStart="25dp"
-                android:paddingEnd="25dp"
-        >
+                android:layout_marginTop="240dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp">
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/loremipsum"
                     android:textSize="18dp"
+
             />
         </RelativeLayout>
+
         <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom">
+                android:layout_marginTop="400dp">
 
             <ImageView
+
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    app:srcCompat="@drawable/food_delivery"
-                    android:layout_marginStart="15dp"
-                    android:layout_alignParentBottom="true"/>
+                    app:srcCompat="@drawable/delivery"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"/>
 
             <ImageView
-                    android:id="@+id/iv_reprint"
+
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     app:srcCompat="@drawable/back_arrow"
+                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentEnd="true"/>
+                    android:layout_alignParentRight="true"/>
 
         </RelativeLayout>
-
-    </LinearLayout>
-
+    </RelativeLayout>
 </ScrollView>
